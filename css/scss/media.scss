@@ -1,0 +1,93 @@
+@media screen and  (max-width: 870px) {
+  .todo-list .my-list li {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and  (max-width: 815px) {
+  .price {
+    font-size: 1.3rem;
+    right: 20;
+    span {
+      font-size: 3.4rem;
+    }
+    .p {
+      font-size: 1.4rem;
+    }
+  }
+  .todo-list .my-list li {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and  (max-width: 700px) {
+  .todo-list .my-list li {
+    font-size: 1.6rem;
+    .todo-val {
+      margin-right: 5px;  
+    }
+  }
+}
+
+@media screen and  (max-width: 590px) {
+  .price {
+    right: 25%;
+    top: 72%;
+  }
+  .services {
+    display: none;
+  }
+  .aside-wrap {
+    height: 820px;
+    .aside {
+      .aside-img {
+        display: block;
+        padding-left: 5px;
+        margin:  10px auto;
+        width: 100%;
+      }
+      .accordion-menu {
+        margin: auto;
+        padding: 0 10px;
+      }
+    }
+  }
+  
+  .footer-nav {
+    display: none;
+  }
+  
+  .todo-list .my-list {
+    padding-left: 15px;
+      li {
+      font-size: 1.4rem;
+      a {
+        margin: 0 5px;
+      }
+      img {
+        width: 10px;
+      }
+    }
+  }
+}
+  
+@media screen and  (max-width: 440px) {
+  .todo-list .my-list {
+    padding-left: 11px;
+      li {
+      font-size: 1rem;
+        img {
+        width: 7px;
+      }
+    }
+  }
+}
+
+@media screen and  (max-width: 400px) {
+  .slider-wrap {
+    display: none;
+  }
+  .article-wrap .article .service img {
+    float: none;
+  }
+}

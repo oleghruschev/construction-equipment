@@ -1,0 +1,123 @@
+{% extends 'main.html' %}
+
+{% block title %}
+		Услуги строительной техники
+{% endblock %}
+
+{% block head %}
+{{parent()}}
+	<script type="text/javascript" src="build/all.js"></script>
+{% endblock %}
+
+{% block slider %}
+<div class="slider-wrap" class="retreat">
+  <div class="slider">
+    <div class="sli-links">
+      <span class="control-slide">0</span><br/>
+      <span class="control-slide">1</span><br/>
+      <span class="control-slide">2</span>
+    </div>
+    <a class="prewbutton"><img src="img/prewbutton.png" alt=""></a>
+    <a class="nextbutton"><img src="img/nextbutton.png" alt=""></a>
+    <div class="price">
+      <p>ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА<br/>В АРЕНДУ ОТ<span> 15000</span></p>
+      <p class="p">руб./сутки</p>
+    </div>
+    <div class="slide">
+      <img src="img/slider-bg.png" alt="slider-bg.png">
+    </div>
+    <div class="slide">
+      <img class="slide-img2" src="img/slider-bg2.png" alt="slider-bg">
+    </div>
+    <div class="slide">
+      <img class="slide-img3" src="img/slider-bg3.png" alt="slider-bg">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block accordion %}
+<aside class="aside-wrap retreat">
+  <div class="aside">
+    <nav class="aside-nav">
+      <ul>
+        <li><a href="#">Главная <span>/</span></a></li>
+        <li><a href="#">Каталог <span>/</span></a></li>
+        <li><a href="#" id="active-link">Название товара</a></li>
+      </ul>
+    </nav>
+    <div class="aside-img">
+      <img src="img/accordion-img.jpg" alt="">
+    </div>
+    <div class="accordion-menu">
+      <h2>JCB 4CX Super</h2>
+      <div class="features characteristics">
+        <h1>Характеристики
+          <img class="arrow-bottom" src="img/arrow-bottom.png" alt="arrow-bottom">
+          <img class="arrow-top display_none" src="img/arrow-top.png" alt="arrow-top">
+        </h1>
+      </div>
+      <div class="submenu">
+        <input id="feature1" class="radio" type="radio" name="feature" checked="cheсked" >
+        <label for="feature1">Характеристика 1</label><br/>
+        <input id="feature2" class="radio" type="radio" name="feature" >
+        <label for="feature2">Характеристика 2</label><br/>
+        <input id="feature3" class="radio" type="radio" name="feature" >
+        <label for="feature3">Характеристика 3</label>
+      </div>
+      <div class="features information">
+        <h1>Информация
+          <img class="arrow-bottom_inf" src="img/arrow-bottom.png" alt="arrow-bottom">
+          <img class="arrow-top_inf display_none" src="img/arrow-top.png" alt="arrow-top">
+        </h1>
+      </div>
+      <div class="submenu-inf display_none">
+        <div class="submenu-inf__price">
+          <h1 class="submenu-inf__value">125.000 Р.</h1>
+        </div>
+        <div class="submenu-ordering">
+          <a href="#">ЗАКАЗАТЬ</a>
+            <div>
+      </div>
+    </div>
+  </div>
+</aside>
+{% endblock %}
+
+{% block services %}
+<div class="article-header">
+  <h1>УСЛУГИ</h1>
+</div>
+<article class="article-wrap retreat">
+  <div class="article container-fluid">
+  	{% for service in services %}
+	  	{% if service.row %}
+	  	<div class="row">
+	  	{% endif %}	
+		    <div class="service col-md-6">
+		      <img src="img/services-img.png" alt="services">
+		      <h2>{{ service.title }}</h2>
+		      <p>{{ service.value }}</p>
+		    </div>
+		  {% if service.row == false %}
+	    </div>
+	    {% endif %}
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}
+
+{% block todo %}
+<div class="todo-list retreat">
+  <h1>ЗАГОЛОВОК</h1>
+  <ol class="my-list"></ol>
+  <input type="text" class="todo-input" maxlength="30">
+  <a class="add">
+    <img src="img/ok_icon.png" alt="ok">
+  </a>
+  <a class="delete">
+    <img src="img/delete_icon.png" alt="delete">
+  </a>
+</div>
+{% endblock %}
+		
