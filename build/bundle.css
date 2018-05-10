@@ -342,6 +342,7 @@ body p {
 .aside-wrap .aside .aside-nav ul li {
   float: left;
   list-style: none;
+  font-size: 1.2rem;
   padding: 2px;
 }
 
@@ -366,6 +367,10 @@ body p {
   max-width: 620px;
   height: 410px;
   margin-left: 323px;
+}
+
+.aside-wrap .aside .accordion-menu h1 {
+  margin-top: 3px;
 }
 
 .features {
