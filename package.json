@@ -1,16 +1,16 @@
 {
   "name": "construction-equipment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Услуги строительной техники",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oleghruschev/construction-equipment.git"
   },
-  "author": "Khrushchev.Oleg\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[_",
+  "author": "Khrushchev Oleg",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oleghruschev/construction-equipment/issues"
